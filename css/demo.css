@@ -1,0 +1,155 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+ .navbar{
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    background-color: rgb(43, 76, 223);
+    position: fixed;
+    z-index: 100;
+
+}
+
+ .navbar .heading{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 5px;
+}
+ .navbar .heading span{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+}
+
+ .navbar .logout{
+    width: auto;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    right: 40px;
+    justify-content: space-between;
+}
+ .navbar .logout img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 0 8px 0 0;
+}
+ .navbar .logout a{
+    margin-top: 5px;
+    height: 80%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border: 2px solid crimson;
+    width: 80px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.3s ease ;
+    transition-property: background-color,color;
+}
+ .navbar .logout a:hover{
+    background-color: crimson;
+    color: white;
+}
+
+ #option_area{
+    /* display: none; */
+    width: 20%;
+    min-height:100vh ;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(37, 39, 39);
+    padding-top: 70px;
+    flex-direction: column;
+    
+    
+}
+
+ #option_area .user_detail{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s ease-in;
+}
+ #option_area .user_detail img{
+    height: 135px;
+    width: 125px;
+    box-shadow: 0px 2px 4px 3px;
+    border: 1px solid white;
+}
+
+ #option_area .user_detail h6{
+    padding-top: 5px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+
+}
+ #option_area .user_detail p{
+    color: rgb(150, 144, 144);
+    font-weight: bold;
+}
+
+.container {
+    
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.container main{
+    margin-top: 50px;
+}
+
+.container main .dashboard{
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    flex-direction: column;
+}
+.container main .dashboard .hamburger{
+    display: none;
+    /* margin-right: 10px; */
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
+
+@media only screen and (max-width:420px){
+    .container{
+        width: 100vw;
+    }
+    .navbar .heading{
+        visibility: hidden;
+    }
+    #option_area{
+        display: none;
+        overflow: hidden;
+        width: 40%;
+    }
+
+    .container main .dashboard .hamburger{
+        display: block;
+    }
+
+}
+   

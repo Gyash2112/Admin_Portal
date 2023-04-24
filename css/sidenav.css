@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    display: flex;
+}
+main #option_area::-webkit-scrollbar {
+    display: none;
+  }
+
+
+/* options panel starts */
+
+
+main #option_area{
+    width: 20%;
+    min-height:80vh ;
+    background-color: rgb(37, 39, 39);
+    padding-top: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    overflow-y: auto;
+    
+}
+main #option_area .close_nav{
+    display: none;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+main #option_area .close_nav span{
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+}
+
+main #option_area .user_detail{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main #option_area .user_detail img{
+    height: 135px;
+    width: 125px;
+    box-shadow: 0px 2px 4px 3px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+main #option_area .user_detail h6{
+    padding-top: 5px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+
+}
+main #option_area .user_detail p{
+    color: rgb(150, 144, 144);
+    font-weight: bold;
+    padding-top: 2px;
+}
+main .dashboard{
+    min-height: 100vh;
+    width: 80%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    /* padding-left: 10px; */
+    /* padding-left: 20%; */
+}
+
+main .dashboard .hamburger{
+    display: none;
+    width: 100%;
+    height: auto;
+    /* z-index: 1; */
+}
+
+
+
+
+
+
+@media only screen and (max-width:420px){
+    main #option_area{
+        width: 50%;
+        z-index: 1;
+        display: none;
+        
+    }
+    main #option_area .close_nav{
+        display: flex;
+        
+    }
+    
+    
+
+    main .dashboard{
+        width: 100vw;
+        overflow-x: auto;
+        /* margin-top: 50px; */
+    }
+    main .dashboard .hamburger{
+        margin-top: 10px;
+        display: block;
+        position: fixed;
+        /* background-color: aqua; */
+        display: flex;
+    justify-content: flex-end;
+    background-color: cadetblue;
+    }
+    main .dashboard .hamburger button{
+        margin-right: 10px;
+    }
+
+}

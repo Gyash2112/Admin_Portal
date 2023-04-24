@@ -1,0 +1,58 @@
+main #option_area .options .dropdown-btn{
+    display: flex;
+    justify-content: flex-start;
+    background: none;
+    color: white;
+    width: 100%;
+    /* height: auto; */
+    padding: 5px;
+    font-size: 1.1rem;
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.5s;
+    overflow: auto;
+    
+}
+main #option_area .options .dropdown-btn:hover{
+    color: rgb(17, 0, 255);
+}
+main #option_area .options .dropdown-btn .active{
+    /* background-color: greenyellow; */
+    background-color: rgb(17, 19, 19);
+    color: white;
+}
+main #option_area .options .dropdown-btn i{
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+    
+}
+
+main #option_area .options .dropdown-container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    
+
+}
+main #option_area .options .dropdown-container a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 5px;
+    width: 100%;
+    padding-left: 10px;
+}
+main #option_area .options .dropdown-container a:hover{
+    background-color: green;
+    color: white;
+}
+
+main #option_area .options .active{
+    background-color: rgb(17, 19, 19);
+    color: white;
+}

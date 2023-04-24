@@ -1,0 +1,176 @@
+
+
+#modal_sec{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#modal_sec #modal1{
+    display: none;
+    flex-direction: column;
+    height: auto;
+    width: 300px;
+    background-color: beige;
+}
+#modal_sec #modal1 form .submit{
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+#modal_sec #modal1 form textarea{
+    font-size: 1.2rem;
+    resize: none;
+}
+::placeholder{
+    font-size: 1.2rem;
+}
+#modal_sec #modal1 form .submit input{
+    padding: 5px 20px;
+    margin: 5px;
+    background: transparent;
+    font-size: 0.8rem;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+#modal_sec #modal1 form .submit input:nth-child(2){
+    background-color: red;
+}
+
+
+#modal_sec #modal2{
+    display: none;
+    flex-direction: column;
+    height: auto;
+    width: 300px;
+    background-color: beige;
+    /* justify-content: center;
+    align-items: center; */
+}
+#modal_sec #modal2 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+#modal_sec #modal2 form h1{
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+}
+#modal_sec #modal2 form .submit{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#modal_sec #modal2 form .submit input{
+    padding: 5px 20px;
+    margin: 5px;
+    background: transparent;
+    font-size: 0.8rem;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+#modal_sec #modal2 form .submit input:nth-child(2){
+    background-color: red;
+}
+
+#modal_sec #modal2 form select{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: transparent;
+    width: 50%;
+    overflow: auto;
+}
+/* #modal_sec #modal2 form select option{
+    height: 100px;
+} */
+
+
+main .dashboard .block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+main .dashboard .block .header{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    width: 100%;
+    height: 2px;
+}
+
+main .dashboard .block .sub-header{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+main .dashboard .block .sub-header h2{
+    font-size: 2rem;
+
+}
+
+main .dashboard .block .sub-header p{
+    font-size: 1.2rem;
+}
+
+main .dashboard .block ul{
+    /* display: flex; */
+    margin-left: 15px;
+    /* flex-direction: column; */
+}
+main .dashboard .block ul li{
+    display: flex;
+    /* list-style: square; */
+    font-size: 1.2rem;
+    margin-top: 8px;
+    font-weight: bolder;
+    /* list-style: none; */
+}
+main .dashboard .block ul li img{
+    height: 25px;
+    width: 25px;
+}
+main .dashboard .block .button_div{
+    display: flex;
+    margin: 10px;
+}
+
+main .dashboard .block .button_div button{
+    padding: 10px;
+    width: auto;
+    background-color: orange;
+    margin-top: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+main .dashboard .block .button_div button:nth-child(2){
+    background-color: red;
+}
+main .dashboard .block .button_div button:nth-child(3){
+    background-color: cadetblue;
+}

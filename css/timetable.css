@@ -1,0 +1,38 @@
+.container main .dashboard .timetable{
+    min-width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+.container main .dashboard .timetable table{
+    width: 99.9%;
+    height: auto;
+    margin-left: 4px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: #f2f4ff;
+}
+.container main .dashboard .timetable table tr{
+    border: 1px solid black;
+    height: 50px;
+    width: auto;
+}
+.container main .dashboard .timetable table tr th{
+    font-size: 2rem;
+    font-weight: bolder;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+.container main .dashboard .timetable table tr td{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    word-wrap: break-word;
+    width: 11.1%;
+    overflow-y: auto;
+}
+
+.container main .dashboard .timetable table tr td:first-child{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+

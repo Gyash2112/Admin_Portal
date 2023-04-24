@@ -1,0 +1,159 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.container .navbar{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    background-color: rgb(43, 76, 223);
+    position: fixed;
+    z-index: 100;
+
+}
+
+.container .navbar .heading{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 5px;
+}
+.container .navbar .heading span{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+}
+
+.container .navbar .logout{
+    width: auto;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    right: 40px;
+    justify-content: space-between;
+}
+.container .navbar .logout img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 0 8px 0 0;
+}
+.container .navbar .logout a{
+    margin-top: 5px;
+    height: 80%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border: 2px solid crimson;
+    width: 80px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.3s ease ;
+    transition-property: background-color,color;
+}
+.container .navbar .logout a:hover{
+    background-color: crimson;
+    color: white;
+}
+/* main section */
+main{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* options panel starts */
+
+/* option panel ends */
+
+/* dashboard panel starts */
+::placeholder{
+    font-size: 1rem;
+
+}
+
+main .dashboard form{
+    height: 70%;
+    width: 100%;
+    padding-top: 70px;
+}
+main .dashboard form h1{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: black;
+    margin-left: 10px;
+}
+main .dashboard form .form-group{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px;
+}
+main .dashboard form .form-group label{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 3px;
+}
+main .dashboard form .form-group input{
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid black;
+    background-color: azure;
+}
+main .dashboard form .form-group p{
+    color: red;
+    
+}
+
+
+
+
+main .dashboard form .form-group input[type=submit]{
+    width:125px;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
+
+ 
+
+/* dashboard panel ends */
+/* main section ends */
+
+
+@media only screen and (max-width:420px){
+    .container .navbar{
+        width: 100vw;
+        height: 50px;
+        /* background-color: coral; */
+    }
+    .container .navbar h1{
+        display: none;
+    }
+
+    .container .navbar .logout img{
+            height: 100%;
+            width: auto;
+    }
+    .container .navbar .logout a{
+        background-color: crimson;
+        color: white;
+        align-items: center;
+        padding-top: 4px;
+    }
+    
+
+
+    
+
+}

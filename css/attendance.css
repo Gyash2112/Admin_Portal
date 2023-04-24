@@ -1,0 +1,95 @@
+.container main .dashboard .students{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container main .dashboard .students h1{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.container main .dashboard .students h1 span{
+    font-weight: 900;
+}
+
+.container main .dashboard .students .data{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.container main .dashboard .students .data form{
+    width: 100%;
+    height: auto;
+}
+
+.container main .dashboard .students .data form table{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+.container main .dashboard .students .data form table tr{
+    height: auto;
+    width: 100%;
+}
+.container main .dashboard .students .data form table tr th{
+    font-weight: 900;
+    font-size: 1.5rem;
+    border-bottom:2px solid black;
+}
+.container main .dashboard .students .data form table td{
+    border-bottom:1px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.container main .dashboard .students .data form table tr img{
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+}
+.container main .dashboard .students .data form .submit{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.container main .dashboard .students .data form .submit input{
+    padding: 10px 25px 10px 25px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+}
+
+.container main .dashboard .students .data form input[type="radio"] {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Chrome, Safari, Opera */
+    transform: scale(1.1);
+  }
+
+
+  @media only screen and (max-width:420px) {
+    .container main .dashboard .students{
+        margin-top: 70px;
+    }
+    .container main .dashboard .students h1{
+        font-size: 1.5rem;
+    }
+    .container main .dashboard .students span{
+        font-size: 2rem;
+    }
+
+    .container main .dashboard .students .data form table td:last-child{
+            font-size: 1.2rem;
+    }
+    .container main .dashboard .students .data form table td:last-child input{
+        margin-top: 10px;
+    }
+
+
+  }
+
